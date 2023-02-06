@@ -11,3 +11,4 @@
             Height: {{ $person  -> height }} cm <br>
         </li>
     </ul>
+@endsection
