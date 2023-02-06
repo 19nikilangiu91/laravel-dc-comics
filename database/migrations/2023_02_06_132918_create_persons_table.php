@@ -10,6 +10,8 @@ return new class extends Migration {
      *
      * @return void
      */
+
+    //  Definisco le colonne e i vincoli di integrità all' interno della migration.
     public function up()
     {
         Schema::create('persons', function (Blueprint $table) {
