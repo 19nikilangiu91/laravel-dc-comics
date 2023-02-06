@@ -17,4 +17,11 @@ class MainController extends Controller
 
         return view('pages.home', compact('people'));
     }
+
+    public function personDelete(Person $people)
+    {
+        $people->delete();
+
+        return redirect()->route('home');
+    }
 }
