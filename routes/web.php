@@ -21,7 +21,7 @@ Route::get('/', [MainController::class, 'home'])
     ->name('home');
 
 // Delete Route
-Route::get('/person/delete/{people}', [MainController::class, 'personDelete'])
+Route::get('/person/delete/{person}', [MainController::class, 'personDelete'])
     ->name('person.delete');
 
 // Create Route
