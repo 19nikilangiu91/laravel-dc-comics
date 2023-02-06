@@ -32,9 +32,12 @@ class MainController extends Controller
 
     public function personStore(Request $request)
     {
-        $data = $request->all();
-
-        // var_dump($data);
+        $data = $request->validate([
+            'first_name' => 'required|string|max:32',
+            'last_name' => 'required|string|max:32',
+            'date_of_birth' => 'required|date',
+            'height' => 'nullable|integer|min:50|max:100'
+        ]);
 
         $person = new Person();
 
