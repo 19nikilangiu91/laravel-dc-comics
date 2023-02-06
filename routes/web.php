@@ -19,3 +19,7 @@ use App\Http\Controllers\MainController;
 // Home Route
 Route::get('/', [MainController::class, 'home'])
     ->name('home');
+
+// Delete Route
+Route::get('/person/delete/{people}', [MainController::class, 'personDelete'])
+    ->name('person.delete');
