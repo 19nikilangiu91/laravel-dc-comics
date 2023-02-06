@@ -12,13 +12,13 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+
+    // Richiamo il PersonSeeder appena creato.
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            PersonSeeder::class,
+        ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
