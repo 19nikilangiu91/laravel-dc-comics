@@ -3,7 +3,9 @@
 @section('content')
     
     <h1>People</h1>
-    <a href="{{ route('person.create') }}">Create a New Person</a>
+    <a href="{{ route('person.create') }}">
+        <h2>Create a New Person</h2>
+    </a>
     <ul>
         @foreach ($people as $person)
         <a href="{{ route('person.show', $person) }}">
@@ -14,10 +16,11 @@
                 Height: {{ $person -> height }} cm <br>
             </li>
         </a>
-        <a href="{{ route('person.edit', $person) }}">
+        <a href="{{ route('person.edit', $person) }}" class="edit">
             EDIT
         </a>
-        <a href="{{ route('person.delete', $person) }}">X</a>
+        <a href="{{ route('person.delete', $person) }}" class="delete">X</a>
+        <br>
         @endforeach
     </ul>
 

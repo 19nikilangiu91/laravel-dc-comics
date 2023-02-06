@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+
+    h2 {
+        text-decoration: none;
+        color: red;
+    }
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        margin: 10px;
+        color: black;
+    }
+}
+
+.edit {
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.delete {
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+}

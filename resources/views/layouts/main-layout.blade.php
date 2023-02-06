@@ -12,10 +12,10 @@
 </head>
 <body>
     
-    @include('components.header')
+    {{-- @include('components.header') --}}
     @include('components.errors')
     @yield('content')
-    @include('components.footer')
+    {{-- @include('components.footer') --}}
     
 </body>
 </html>

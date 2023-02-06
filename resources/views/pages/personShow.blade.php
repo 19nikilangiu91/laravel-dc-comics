@@ -1,5 +1,8 @@
 @extends('layouts.main-layout')
 
+@section('head')
+    <title>Person Details</title>
+    
 @section('content')
     
     <h1>Person</h1>
