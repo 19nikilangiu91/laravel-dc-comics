@@ -31,3 +31,8 @@ Route::get('/person/create', [MainController::class, 'personCreate'])
 // Store Route
 Route::post('/person/store', [MainController::class, 'personStore'])
     ->name('person.store');
+
+// Bonus 1
+// Show
+Route::get('/person/show/{person}', [MainController::class, 'personShow'])
+    ->name('person.show');

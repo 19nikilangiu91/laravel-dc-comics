@@ -47,4 +47,11 @@ class MainController extends Controller
 
         return redirect()->route('home');
     }
+
+    // Bonus 1
+    public function personShow(Person $person)
+    {
+
+        return view('pages.personShow', compact('person'));
+    }
 }
