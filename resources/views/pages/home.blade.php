@@ -14,7 +14,10 @@
                 Height: {{ $person -> height }} cm <br>
             </li>
         </a>
-            <a href="{{ route('person.delete', $person) }}">X</a>
+        <a href="{{ route('person.edit', $person) }}">
+            EDIT
+        </a>
+        <a href="{{ route('person.delete', $person) }}">X</a>
         @endforeach
     </ul>
 

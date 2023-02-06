@@ -33,6 +33,14 @@ Route::post('/person/store', [MainController::class, 'personStore'])
     ->name('person.store');
 
 // Bonus 1
-// Show
+// Show Route
 Route::get('/person/show/{person}', [MainController::class, 'personShow'])
     ->name('person.show');
+
+// Edit Route
+Route::get('/person/edit/{person}', [MainController::class, 'personEdit'])
+    ->name('person.edit');
+
+// Upgrade Route
+Route::post('/person/update/{person}', [MainController::class, 'personUpdate'])
+    ->name('person.update');
