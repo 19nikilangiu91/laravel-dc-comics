@@ -10,8 +10,8 @@
                 Last Name: {{ $person -> last_name }}<br>
                 Date of Birth: {{ $person -> date_of_birth }}<br>
                 Height: {{ $person -> height }} cm <br>
-                <br>
             </li>
+            <a href="{{ route('person.delete', $person) }}">X</a>
         @endforeach
     </ul>
 
