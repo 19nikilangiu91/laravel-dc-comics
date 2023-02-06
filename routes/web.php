@@ -41,6 +41,6 @@ Route::get('/person/show/{person}', [MainController::class, 'personShow'])
 Route::get('/person/edit/{person}', [MainController::class, 'personEdit'])
     ->name('person.edit');
 
-// Upgrade Route
+// Update Route
 Route::post('/person/update/{person}', [MainController::class, 'personUpdate'])
     ->name('person.update');
