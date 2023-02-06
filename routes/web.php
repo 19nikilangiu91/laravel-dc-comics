@@ -23,3 +23,11 @@ Route::get('/', [MainController::class, 'home'])
 // Delete Route
 Route::get('/person/delete/{people}', [MainController::class, 'personDelete'])
     ->name('person.delete');
+
+// Create Route
+Route::get('/person/create', [MainController::class, 'personCreate'])
+    ->name('person.create');
+
+// Store Route
+Route::post('/person/store', [MainController::class, 'personStore'])
+    ->name('person.store');
