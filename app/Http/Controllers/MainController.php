@@ -36,14 +36,14 @@ class MainController extends Controller
 
         // var_dump($data);
 
-        $people = new Person();
+        $person = new Person();
 
-        $people->first_name = $data['first_name'];
-        $people->last_name = $data['last_name'];
-        $people->date_of_birth = $data['date_of_birth'];
-        $people->height = $data['height'];
+        $person->first_name = $data['first_name'];
+        $person->last_name = $data['last_name'];
+        $person->date_of_birth = $data['date_of_birth'];
+        $person->height = $data['height'];
 
-        $people->save();
+        $person->save();
 
         return redirect()->route('home');
     }
